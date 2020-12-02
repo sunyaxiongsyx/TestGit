@@ -3,7 +3,7 @@
                ioDirection="DataIn/DataOut"
                mode="synchronous"
                side="client">
-   <common uri="http://127.0.0.1:7005" serverType="jetty"/>
+   <common uri="http://127.0.0.1:8005" serverType="jetty"/>
    <request method="post" encoding="UTF-8" connectTimeout="10000" action="toBytes">
  	   </request>
    <response  readTimeout="10000" encoding="UTF-8" action="toBytes"/>
