@@ -39,7 +39,8 @@
     <item id="0001" desc="" category="DEFAULT" path="dev/protocol/client/0001.HTTPServiceConnector" protocoltype="HTTPServiceConnector"/>  
     <item id="0002" desc="" category="DEFAULT" path="dev/protocol/client/0002.HTTPServiceConnector" protocoltype="HTTPServiceConnector"/>  
     <item id="0003" desc="" category="DEFAULT" path="dev/protocol/client/0003.HTTPServiceConnector" protocoltype="HTTPServiceConnector"/>  
-    <item id="0004" desc="" category="DEFAULT" path="dev/protocol/client/0004.HTTPServiceConnector" protocoltype="HTTPServiceConnector"/> 
+    <item id="0004" desc="" category="DEFAULT" path="dev/protocol/client/0004.HTTPServiceConnector" protocoltype="HTTPServiceConnector"/>  
+    <item id="005" desc="" category="DEFAULT" path="dev/protocol/client/005.HTTPServiceConnector" protocoltype="HTTPServiceConnector"/> 
   </component>  
   <component type="protocol_server"> 
     <item id="ESB_DETECT_GET" desc="标准ESB探测协议16600" category="DEFAULT" path="dev/protocol/server/ESB_DETECT_GET.HTTPChannelConnector" protocoltype="HTTPChannelConnector"/>  
