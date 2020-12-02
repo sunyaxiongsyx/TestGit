@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<id>simpleMode</id>
+	<nickName>simpleMode</nickName>
+	<type>base</type>
+	<location>1</location>
+	<category>service</category>	
+	<lastModified>1546936033893</lastModified>
+	<description><![CDATA[是否使用简单开发模式]]></description>
+	<impl>com.dc.esb.base.impls.service.simpleMode</impl>
+	<contribution></contribution>
+		<parameters>
+				<selfparameter>
+					</selfparameter>
+		</parameters>
+	</root>

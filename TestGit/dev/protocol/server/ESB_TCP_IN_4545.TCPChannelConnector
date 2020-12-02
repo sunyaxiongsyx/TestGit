@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<id>ESB_TCP_IN_4545</id>
+	<nickName>ESB_TCP_IN_4545</nickName>
+	<type>protocol_server</type>
+	<subType>TCPChannelConnector</subType>
+	<category>DEFAULT</category>
+	<communicateType>synchronous</communicateType>
+	<connectMode>short</connectMode>
+	<ioDirection>DataIn/DataOut</ioDirection>
+	<serviceSystem></serviceSystem>
+	<lastModified></lastModified>
+	<description><![CDATA[tcp接入协议]]></description>
+	<resources>
+			</resources>
+</root>

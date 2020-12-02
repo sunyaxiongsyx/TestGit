@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<id>HttpIn6001</id>
+	<nickName>HttpIn6001</nickName>
+	<type>protocol_server</type>
+	<subType>HTTPChannelConnector</subType>
+	<category>DEFAULT</category>
+	<communicateType>synchronous</communicateType>
+	<connectMode></connectMode>
+	<ioDirection>DataIn/DataOut</ioDirection>
+	<serviceSystem></serviceSystem>
+	<lastModified></lastModified>
+	<description><![CDATA[标准穿透流程http接入协议]]></description>
+	<resources>
+			</resources>
+</root>

@@ -44,7 +44,7 @@
             <description>服务器地址</description>
         </item>
         <item>            <key>exportOrder</key>
-            <value>identifyparser,lib,config,mdt,metadatadict,dbresource,base,protocoltype,protocol_server,protocol_client,identifyservice,identifysystem,config.adaptor,channel,business,channelservicesystem.channel,channelservicesystem.serivce,proxy,exceptionprocess,exceptioncode,timertask</value>
+            <value>identifyparser,lib,config,mdt,metadatadict,dbresource,base,protocoltype,protocol_server,protocol_client,identifyservice,identifysystem,config.adaptor,channel,business,channelservicesystem.channel,channelservicesystem.serivce,proxy,exceptionprocess,exceptioncode</value>
             <description>导出到控制台顺序</description>
         </item>
         <item>            <key>mock.jmx.server.ip</key>

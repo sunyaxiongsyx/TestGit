@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<id>ESBSYS_BusiWeather_OUT</id>
+	<nickName>ESBSYS_BusiWeather_OUT</nickName>
+	<type>protocol_server</type>
+	<subType>HTTPServiceConnector</subType>
+	<category>DEFAULT</category>
+	<communicateType>synchronous</communicateType>
+	<connectMode></connectMode>
+	<ioDirection>DataIn/DataOut</ioDirection>
+	<serviceSystem>ESBSYS</serviceSystem>
+	<lastModified></lastModified>
+	<description><![CDATA[天气接口接出协议]]></description>
+	<resources>
+			</resources>
+</root>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<relations> 
+  <relation interfaceid="ChannelXml" isStand="N" interfacetype="0" sysid="ChannelXml" serviceid="BusiSoap"/>  
+  <relation interfaceid="ESBSYS" isStand="N" interfacetype="1" sysid="ESBSYS" serviceid="BusiSoap"/>  
+  <relation interfaceid="ChannelJson" isStand="N" interfacetype="0" sysid="ChannelXml" serviceid="BusiJson"/>  
+  <relation interfaceid="ESBSYS" isStand="N" interfacetype="1" sysid="ESBSYS" serviceid="BusiJson"/>  
+  <relation interfaceid="ChannelSoap" isStand="N" interfacetype="0" sysid="ChannelSoap" serviceid="BusiJson"/>  
+  <relation interfaceid="ChannelXml1" isStand="N" interfacetype="0" sysid="ChannelXml1" serviceid="BusiSoap"/> 
+</relations>

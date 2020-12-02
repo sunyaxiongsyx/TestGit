@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mappings xmlns="http://com/dc/esb/xmlbean/protocol/mapping">  
+  <serviceMapping> 
+    <id>BusiRabbitMQ</id>  
+    <file>rabbitMQOUT.xml</file> 
+  </serviceMapping>  
+  <serviceMapping> 
+    <id>BusiESB</id>  
+    <file>ESBSYS_BusiESB_OUT.xml</file> 
+  </serviceMapping>  
+  <serviceMapping>
+    <id>BusiJson</id>
+    <file>ESBSYS_BusiESB_OUT.xml</file>
+  </serviceMapping>
+</mappings>

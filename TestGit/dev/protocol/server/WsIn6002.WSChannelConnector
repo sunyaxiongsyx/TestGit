@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<id>WsIn6002</id>
+	<nickName>WsIn6002</nickName>
+	<type>protocol_server</type>
+	<subType>WSChannelConnector</subType>
+	<category>DEFAULT</category>
+	<communicateType>synchronous</communicateType>
+	<connectMode></connectMode>
+	<ioDirection>DataIn/DataOut</ioDirection>
+	<serviceSystem></serviceSystem>
+	<lastModified></lastModified>
+	<description><![CDATA[标准ws穿透场景接入协议]]></description>
+	<resources>
+			</resources>
+</root>

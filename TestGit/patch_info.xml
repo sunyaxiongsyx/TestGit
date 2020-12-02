@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project id="SZHQ">
+    <buildInfo>
+        <version>build_20191022_01</version>
+        <compileDate>2019-10-22 10:47:45</compileDate>
+        <compileUser>zhaiyd</compileUser>
+        <buildDate>2019-10-22 10:47:45</buildDate>
+        <buildUser>zhaiyd</buildUser>
+    </buildInfo>
+    <components>
+        <component type="identifyservice">
+            <category id="DEFAULT" path="/DEFAULT">
+                <item id="服务识别" location="2" path="\dev\identify\service\identifyservice.xml"/>
+            </category>
+        </component>
+        <component type="baseservicecomposite.platform">
+            <category id="DEFAULT" path="/DEFAULT">
+                <item id="平台基础服务" location="2" path="\basecomposite.xml"/>
+            </category>
+        </component>
+        <component type="exceptioncode">
+            <category id="DEFAULT" path="/DEFAULT">
+                <item id="异常码配置" location="2" path="\dev\exception\exception_code.xml"/>
+            </category>
+        </component>
+        <component type="exceptionprocess">
+            <category id="DEFAULT" path="/DEFAULT">
+                <item id="异常处理维护" location="2" path="\dev\exception\exception_process.xml"/>
+            </category>
+        </component>
+        <component type="protocol_server">
+            <category id="SZHQ" path="/DEFAULT">
+                <item id="ESB_DETECT_GET" location="2" path="\dev\protocol\server\ESB_DETECT_GET.HTTPChannelConnector"/>
+                <item id="ESB_TCP_IN_4545" location="2" path="\dev\protocol\server\ESB_TCP_IN_4545.TCPChannelConnector"/>
+                <item id="HttpIn6001" location="2" path="\dev\protocol\server\HttpIn6001.HTTPChannelConnector"/>
+                <item id="WsIn6002" location="2" path="\dev\protocol\server\WsIn6002.WSChannelConnector"/>
+            </category>
+        </component>
+        <component type="config.adaptor">
+            <category id="DEFAULT" path="/DEFAULT">
+                <item id="AdaptorPlatForm" location="2" path="\resources\adaptorFlow\AdaptorPlatForm.adp"/>
+                <item id="PROTOCOL_REQ" location="2" path="\resources\adaptorFlow\PROTOCOL_REQ.adp"/>
+                <item id="PROTOCOL_RES" location="2" path="\resources\adaptorFlow\PROTOCOL_RES.adp"/>
+                <item id="PackOut" location="2" path="\resources\adaptorFlow\PackOut.adp"/>
+                <item id="SFPackOut" location="2" path="\resources\adaptorFlow\SFPackOut.adp"/>
+                <item id="SFTrIn" location="2" path="\resources\adaptorFlow\SFTrIn.adp"/>
+                <item id="SFTrOut" location="2" path="\resources\adaptorFlow\SFTrOut.adp"/>
+                <item id="SFUnPackIn" location="2" path="\resources\adaptorFlow\SFUnPackIn.adp"/>
+                <item id="ThroughIn" location="2" path="\resources\adaptorFlow\ThroughIn.adp"/>
+                <item id="ThroughOut" location="2" path="\resources\adaptorFlow\ThroughOut.adp"/>
+                <item id="ThroughTcpIn" location="2" path="\resources\adaptorFlow\ThroughTcpIn.adp"/>
+                <item id="UnpackIn" location="2" path="\resources\adaptorFlow\UnpackIn.adp"/>
+            </category>
+        </component>
+        <component type="business">
+            <category id="service" path="/service">
+                <item id="BusiESB" location="2" path="\dev\services\business\service\BusiESB.biz"/>
+                <item id="BusiPublish" location="2" path="\dev\services\business\service\BusiPublish.biz"/>
+            </category>
+        </component>
+        <component type="protocol_client">
+            <category id="SZHQ" path="/DEFAULT">
+                <item id="ESBSYS_BusiESB_OUT" location="2" path="\dev\protocol\client\ESBSYS_BusiESB_OUT.HTTPServiceConnector"/>
+                <item id="ESBSYS_BusiWeather_OUT" location="2" path="\dev\protocol\client\ESBSYS_BusiWeather_OUT.HTTPServiceConnector"/>
+            </category>
+        </component>
+        <component type="lib">
+            <category id="DEFAULT" path="/DEFAULT">
+                <item id="dbresource.jar" location="2" path="\lib\dbresource.jar"/>
+                <item id="freemarker-2.3.8.jar" location="2" path="\lib\freemarker-2.3.8.jar"/>
+                <item id="project.jar" location="2" path="\lib\project.jar"/>
+                <item id="ProjectEnvironment.jar" location="2" path="\lib\ProjectEnvironment.jar"/>
+            </category>
+        </component>
+        <component type="identifysystem">
+            <category id="DEFAULT" path="/DEFAULT">
+                <item id="系统识别" location="2" path="\dev\identify\system\identifysystem.xml"/>
+            </category>
+        </component>
+        <component type="base">
+            <category id="service" path="/service">
+                <item id="ExceptionPackService" location="2" path="\dev\services\base\service\ExceptionPackService.base"/>
+                <item id="simpleMode" location="2" path="\dev\services\base\service\simpleMode.base"/>
+                <item id="TranshferResHeader" location="2" path="\dev\services\base\service\TranshferResHeader.base"/>
+                <item id="UrlIdentifyService" location="2" path="\dev\services\base\service\UrlIdentifyService.base"/>
+            </category>
+        </component>
+        <component type="config">
+            <category id="DEFAULT" path="/DEFAULT">
+                <item id="bootstrap.xml" location="2" path="\config\bootstrap.xml"/>
+                <item id="mxsd_process.properties" location="2" path="\config\mxsd_process.properties"/>
+            </category>
+        </component>
+        <component type="channelservicesystem.serivce">
+            <category id="DEFAULT" path="/DEFAULT">
+                <item id="服务系统" location="2" path="\dev\cssystem\service\servicesystem.xml"/>
+            </category>
+        </component>
+        <component type="channel">
+            <category id="SZHQ" path="/DEFAULT">
+                <item id="ChannelPublish" location="2" path="\dev\channel\DEFAULT\ChannelPublish.ch"/>
+                <item id="ChannelPublishUnpack" location="2" path="\dev\channel\DEFAULT\ChannelPublishUnpack.ch"/>
+                <item id="ChannelThroughIn" location="2" path="\dev\channel\DEFAULT\ChannelThroughIn.ch"/>
+                <item id="OA" location="2" path="\dev\channel\DEFAULT\OA.ch"/>
+            </category>
+        </component>
+    </components>
+    <resources>
+        <resource path="\SmartBranch.brc"/>
+        <resource path="\SmartBranch.cat"/>
+        <resource path="\host.properties"/>
+        <resource path="\resources\configs\in_conf\protocol\protocolMapping.xml"/>
+        <resource path="\resources\configs\in_conf\serviceMgt\contribution.xml"/>
+        <resource path="\resources\configs\out_conf\protocol\protocolMapping.xml"/>
+        <resource path="\resources\configs\out_conf\serviceMgt\contribution.xml"/>
+        <resource path="\resources\relationship\relation.xml"/>
+    </resources>
+</project>

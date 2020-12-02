@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<protocol.ws protocolName="WSChannelConnector" id="WsIn6002" ioDirection="DataIn/DataOut" mode="synchronous" side="server"> 
+	<common GroundProtocol="http" ServerType="jetty" uri="http://127.0.0.1:6002/ESB/WSAPI/*"  wsdlURI="http://127.0.0.1:6002/ESB/WSAPI/*"  wsType="axis" autoAssemble="false" 
+isSoap12="false" serviceids="mytest" wsSecurity=""/>
+	<request headerStr=""  encoding="UTF-8" protocolFlow="PROTOCOL_REQ"/>
+	<response headerStr="" encoding="UTF-8" protocolFlow="PROTOCOL_RES">
+				</response>
+	<advanced	 		threadCount="500" 	connPerHostCount="300" 	readTimeout="30000" 	maxConnCount="2000" 	soLinger="0" 	writeBufferSize="2048" 	reuseAddress="true" 	connectionTimeout="30000" 	readBufferSize="2048" 	tcpNoDelay="true"   	 />	
+	<security protocol="SSL" bidirectional="true"> 
+		<keyStore path="" keyMainPass="" keyPass="" type=""/> 
+		<trustStore path="" keyPass="" type=""/>
+	</security> 
+</protocol.ws>

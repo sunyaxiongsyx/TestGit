@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<protocol.http protocolName="HTTPChannelConnector" id="HttpIn6001"
+               ioDirection="DataIn/DataOut"
+               mode="synchronous"
+               side="server">
+   <common uri="http://127.0.0.1:6001/ESB/API/" serverType="jetty"/>
+   <request serverType="jetty" method="post" encoding="UTF-8" action="toBytes" protocolFlow="PROTOCOL_REQ"/>
+   <response contentType="text/html" encoding="UTF-8" action="toBytes" protocolFlow="PROTOCOL_RES">
+ 	</response>
+   	<security protocol="SSL" bidirectional="true">
+      <keyStore path=""
+      		 	keyMainPass=""
+                keyPass=""
+                type=""/>
+      <trustStore path=""
+                  keyPass=""
+                  type=""/>
+   </security>
+	<advanced	 		threadCount="500" 	connPerHostCount="300" 	readTimeout="30000" 	maxConnCount="2000" 	soLinger="0" 	writeBufferSize="2048" 	reuseAddress="true" 	connectionTimeout="30000" 	readBufferSize="2048" 	tcpNoDelay="true"   	 />	
+</protocol.http>

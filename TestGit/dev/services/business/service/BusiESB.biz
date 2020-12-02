@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<id>BusiESB</id>
+	<type>business</type>
+	<nickName>BusiESB</nickName>
+	<category>service</category>
+	<lastModified>1564037148914</lastModified>
+	<description><![CDATA[内置业务服务]]></description>
+	<impl>com.dc.esb.container.service.DefaultBusinessService</impl>
+	<passThrough>true</passThrough>
+	<contribution></contribution>
+	<servicesystem>ESBSYS</servicesystem>
+	<adapterFlow>
+		<ref>ThroughOut</ref>
+	</adapterFlow>
+	<protocols>
+		<slaprotocol>
+		</slaprotocol>
+		<olaprotocol>
+		</olaprotocol>
+	</protocols>
+</root>

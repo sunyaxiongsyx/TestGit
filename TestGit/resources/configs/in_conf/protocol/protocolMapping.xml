@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mappings xmlns="http://com/dc/esb/xmlbean/protocol/mapping">  
+  <channelMapping> 
+    <id>ChannelRabbitMQ</id>  
+    <file>rabbitMQIN.xml</file> 
+  </channelMapping>  
+  <channelMapping> 
+    <id>ChannelWSIn</id>  
+    <file>WsIn6002.xml</file> 
+  </channelMapping>  
+  <channelMapping>
+    <id>ChannelThroughIn</id>
+    <file>HttpIn6001.xml</file>
+  </channelMapping>
+</mappings>

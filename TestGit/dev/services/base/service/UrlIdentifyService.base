@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<id>UrlIdentifyService</id>
+	<nickName>UrlIdentifyService</nickName>
+	<type>base</type>
+	<location>1</location>
+	<category>service</category>	
+	<lastModified>1564708819017</lastModified>
+	<description><![CDATA[标准协议识别]]></description>
+	<impl>com.dc.esb.base.impls.service.UrlIdentifyService</impl>
+	<contribution></contribution>
+		<parameters>
+				<selfparameter>
+					</selfparameter>
+		</parameters>
+	</root>

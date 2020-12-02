@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<contributions xmlns="http://com/dc/esb/xmlbean/deployment">  
+ <contribution name="BusiRabbitMQ" location="./upload/service/BusiRabbitMQ.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="BusiRabbitMQ"></service> 
+ </contribution>  
+ <contribution name="BaseDataConversion" location="./upload/service/BaseDataConversion.jar" version="0" serviceType="BASE"> 
+  <service serviceid="BaseDataConversion"></service> 
+ </contribution>  
+ <contribution name="BusiDB" location="./upload/service/BusiDB.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="BusiDB"></service> 
+ </contribution>  
+ <contribution name="BusiPublish" location="./upload/service/BusiPublish.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="BusiPublish"></service> 
+ </contribution>  
+ <contribution name="BusiESB" location="./upload/service/BusiESB.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="BusiESB"></service> 
+ </contribution>  
+ <contribution name="BusiJson" location="./upload/service/BusiJson.jar" version="0" serviceType="BUSINESS"> 
+  <service serviceid="BusiJson"></service> 
+ </contribution> 
+</contributions>

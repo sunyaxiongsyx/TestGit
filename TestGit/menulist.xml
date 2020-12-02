@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <components> 
   <component type="identifysystem"> 
     <item id="系统识别" category="DEFAULT" path="/dev/identify/system/identifysystem.xml"/> 
@@ -14,14 +15,52 @@
   </component>  
   <component type="channelservicesystem.serivce"> 
     <item id="服务系统" category="DEFAULT" path="/dev/cssystem/service/servicesystem.xml"/> 
-  </component> 
+  </component>  
   <component type="exceptionprocess"> 
     <item id="异常处理维护" category="DEFAULT" path="/dev/exception/exception_process.xml"/> 
-  </component> 
+  </component>  
   <component type="exceptioncode"> 
     <item id="异常码配置" category="DEFAULT" path="/dev/exception/exception_code.xml"/> 
+  </component>  
+  <component type="business"> 
+    <item id="BusiESB" desc="内置业务服务" category="service" path="dev/services/business/service/BusiESB.biz"/>  
+    <item id="BusiPublish" desc="存储转发服务" category="service" path="dev/services/business/service/BusiPublish.biz"/> 
+  </component>  
+  <component type="mdt"/>  
+  <component type="channel"> 
+    <item id="ChannelPublish" desc="存储转发接入渠道-穿透类" category="DEFAULT" path="dev/channel/DEFAULT/ChannelPublish.ch"/>  
+    <item id="ChannelPublishUnpack" desc="存储转发接入渠道-拆组包类" category="DEFAULT" path="dev/channel/DEFAULT/ChannelPublishUnpack.ch"/>  
+    <item id="ChannelThroughIn" desc="标准ESB接入渠道" category="DEFAULT" path="dev/channel/DEFAULT/ChannelThroughIn.ch"/>  
+    <item id="OA" desc="OA系统接入渠道" category="DEFAULT" path="dev/channel/DEFAULT/OA.ch"/> 
+  </component>  
+  <component type="protocol_client"> 
+    <item id="ESBSYS_BusiESB_OUT" desc="ESB默认接出协议" category="DEFAULT" path="dev/protocol/client/ESBSYS_BusiESB_OUT.HTTPServiceConnector" protocoltype="HTTPServiceConnector"/>  
+    <item id="ESBSYS_BusiWeather_OUT" desc="天气接口接出协议" category="DEFAULT" path="dev/protocol/client/ESBSYS_BusiWeather_OUT.HTTPServiceConnector" protocoltype="HTTPServiceConnector"/> 
+  </component>  
+  <component type="protocol_server"> 
+    <item id="ESB_DETECT_GET" desc="标准ESB探测协议16600" category="DEFAULT" path="dev/protocol/server/ESB_DETECT_GET.HTTPChannelConnector" protocoltype="HTTPChannelConnector"/>  
+    <item id="ESB_TCP_IN_4545" desc="tcp接入协议" category="DEFAULT" path="dev/protocol/server/ESB_TCP_IN_4545.TCPChannelConnector" protocoltype="TCPChannelConnector"/>  
+    <item id="HttpIn6001" desc="标准穿透流程http接入协议" category="DEFAULT" path="dev/protocol/server/HttpIn6001.HTTPChannelConnector" protocoltype="HTTPChannelConnector"/>  
+    <item id="WsIn6002" desc="标准ws穿透场景接入协议" category="DEFAULT" path="dev/protocol/server/WsIn6002.WSChannelConnector" protocoltype="WSChannelConnector"/> 
+  </component>  
+  <component type="base"> 
+    <item id="ExceptionPackService" desc="标准异常封装" category="service" path="dev/services/base/service/ExceptionPackService.base"/>  
+    <item id="simpleMode" desc="是否使用简单开发模式" category="service" path="dev/services/base/service/simpleMode.base"/>  
+    <item id="TranshferResHeader" desc="传递后端http响应头" category="service" path="dev/services/base/service/TranshferResHeader.base"/>  
+    <item id="UrlIdentifyService" desc="标准协议识别" category="service" path="dev/services/base/service/UrlIdentifyService.base"/> 
+  </component>  
+  <component type="config.adaptor"> 
+    <item id="AdaptorPlatForm" desc="" category="DEFAULT" path="resources/adaptorFlow/AdaptorPlatForm.adp" subtype="adaptorFlow"/>  
+    <item id="PROTOCOL_REQ" desc="标准协议接入流程" category="DEFAULT" path="resources/adaptorFlow/PROTOCOL_REQ.adp" subtype="protocolFlow"/>  
+    <item id="PROTOCOL_RES" desc="默认响应流程" category="DEFAULT" path="resources/adaptorFlow/PROTOCOL_RES.adp" subtype="protocolFlow"/>  
+    <item id="PackOut" desc="拆组包接出流程" category="DEFAULT" path="resources/adaptorFlow/PackOut.adp" subtype="adaptorFlow"/>  
+    <item id="SFPackOut" desc="存储转发接出流程-拆组包 " category="DEFAULT" path="resources/adaptorFlow/SFPackOut.adp" subtype="adaptorFlow"/>  
+    <item id="SFTrIn" desc="存储转发接入渠道-穿透" category="DEFAULT" path="resources/adaptorFlow/SFTrIn.adp" subtype="adaptorFlow"/>  
+    <item id="SFTrOut" desc="存储转发接出流程-穿透" category="DEFAULT" path="resources/adaptorFlow/SFTrOut.adp" subtype="adaptorFlow"/>  
+    <item id="SFUnPackIn" desc="存储转发IN流程" category="DEFAULT" path="resources/adaptorFlow/SFUnPackIn.adp" subtype="adaptorFlow"/>  
+    <item id="ThroughIn" desc="穿透场景接入流程" category="DEFAULT" path="resources/adaptorFlow/ThroughIn.adp" subtype="adaptorFlow"/>  
+    <item id="ThroughOut" desc="穿透场景接出流程" category="DEFAULT" path="resources/adaptorFlow/ThroughOut.adp" subtype="adaptorFlow"/>  
+    <item id="ThroughTcpIn" desc="" category="DEFAULT" path="resources/adaptorFlow/ThroughTcpIn.adp" subtype="adaptorFlow"/>  
+    <item id="UnpackIn" desc="拆组包接入流程" category="DEFAULT" path="resources/adaptorFlow/UnpackIn.adp" subtype="adaptorFlow"/>
   </component> 
-   <component type="business"/>
-  <component type="mdt"/>
-  <component type="channel"/>
 </components>

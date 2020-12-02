@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<servicesystems>
+	<servicesystem>
+		<serviceSystemName>ESBSYS</serviceSystemName>
+		<serviceSystemDesc>ESB内置系统</serviceSystemDesc>
+		<hostName></hostName>
+		<hostIp></hostIp>
+		<status>add</status>
+		
+		<protocols>
+								<protocol>ESBSYS_BusiESB_OUT</protocol>
+						<protocol>ESBSYS_BusiJson_OUT</protocol>
+						<protocol>ESBSYS_BusiWS_OUT</protocol>
+						<protocol>ESBSYS_BusiWeather_OUT</protocol>
+							</protocols>
+		
+		<params>
+				</params>
+		<services>
+								<service>
+			<serivcename>BusiESB</serivcename>
+			<protocol>ESBSYS_BusiESB_OUT</protocol>
+			</service>
+						<service>
+			<serivcename>BusiJson</serivcename>
+			<protocol>ESBSYS_BusiJson_OUT</protocol>
+			</service>
+						<service>
+			<serivcename>BusiPublish</serivcename>
+			<protocol>ESBSYS_BusiESB_OUT</protocol>
+			</service>
+						<service>
+			<serivcename>BusiWeather</serivcename>
+			<protocol>ESBSYS_BusiWeather_OUT</protocol>
+			</service>
+							</services>
+	</servicesystem>
+	<servicesystem>
+		<serviceSystemName>ESB</serviceSystemName>
+		<serviceSystemDesc></serviceSystemDesc>
+		<hostName></hostName>
+		<hostIp></hostIp>
+		<status>add</status>
+		
+		<protocols>
+								<protocol>ESBSYS_BusiSoap</protocol>
+							</protocols>
+		
+		<params>
+				</params>
+		<services>
+								<service>
+			<serivcename>BusiSF</serivcename>
+			<protocol>ESBSYS_BusiSoap</protocol>
+			</service>
+							</services>
+	</servicesystem>
+</servicesystems>

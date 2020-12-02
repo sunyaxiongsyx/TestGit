@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<id>ExceptionPackService</id>
+	<nickName>ExceptionPackService</nickName>
+	<type>base</type>
+	<location>1</location>
+	<category>service</category>	
+	<lastModified>1562049206126</lastModified>
+	<description><![CDATA[标准异常封装]]></description>
+	<impl>com.dc.esb.base.impls.service.ExceptionPackService</impl>
+	<contribution></contribution>
+		<parameters>
+				<selfparameter>
+					</selfparameter>
+		</parameters>
+	</root>

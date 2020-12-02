@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<protocol.http protocolName="HTTPChannelConnector" id="ESB_DETECT_GET"
+               ioDirection="DataIn/DataOut"
+               mode="synchronous"
+               side="server">
+   <common uri="http://127.0.0.1:16600/ESBDETECT" serverType="jetty"/>
+   <request serverType="jetty" method="get" encoding="UTF-8" action="toString" protocolFlow="default_protocolAdapter_req_in"/>
+   <response contentType="text/html" encoding="UTF-8" action="toString" protocolFlow="default_protocolAdapter_res_in">
+ 	</response>
+   	<security protocol="SSL" bidirectional="true">
+      <keyStore path=""
+      		 	keyMainPass=""
+                keyPass=""
+                type=""/>
+      <trustStore path=""
+                  keyPass=""
+                  type=""/>
+   </security>
+	<advanced	 		threadCount="50" 	connPerHostCount="200" 	readTimeout="30000" 	maxConnCount="2000" 	soLinger="0" 	writeBufferSize="2048" 	reuseAddress="true" 	connectionTimeout="30000" 	readBufferSize="2048" 	tcpNoDelay="true" 	threshold="10240"   	 />	
+</protocol.http>

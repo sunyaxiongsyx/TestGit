@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<id>TranshferResHeader</id>
+	<nickName>TranshferResHeader</nickName>
+	<type>base</type>
+	<location>1</location>
+	<category>service</category>	
+	<lastModified>1543817754827</lastModified>
+	<description><![CDATA[传递后端http响应头]]></description>
+	<impl>com.dc.esb.base.impls.service.TranshferResHeader</impl>
+	<contribution></contribution>
+		<parameters>
+				<selfparameter>
+					</selfparameter>
+		</parameters>
+	</root>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<protocol.tcp protocolName="TCPChannelConnector" id="ESB_TCP_IN_4545" mode="synchronous" ioDirection="DataIn/DataOut" side="server">
+
+<common connectMode="short" threadsCount="2"  port="4545" url="4545"/>
+
+<request policy="length:unknown" encoding="GBK" readTimeout="10000" action="toBytes" 
+			protocolFlow="default_protocolAdapter_req_in" />
+  <response policy="length:unknown" encoding="UTF-8" action="toBytes" 
+			protocolFlow="default_protocolAdapter_res_in" />
+	<advanced	 	  	 />	
+</protocol.tcp>
