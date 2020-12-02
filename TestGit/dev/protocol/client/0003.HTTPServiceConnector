@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<id>0003</id>
+	<nickName>0003</nickName>
+	<type>protocol_server</type>
+	<subType>HTTPServiceConnector</subType>
+	<category>DEFAULT</category>
+	<communicateType>synchronous</communicateType>
+	<connectMode></connectMode>
+	<ioDirection>DataIn/DataOut</ioDirection>
+	<serviceSystem></serviceSystem>
+	<lastModified></lastModified>
+	<description><![CDATA[]]></description>
+	<resources>
+			</resources>
+</root>
