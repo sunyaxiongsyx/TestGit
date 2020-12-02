@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<composite>
+<component name="ConsumerClientService" desc="in分水岭流程用于向out发送报文" status="pass" type="default">
+	<implementation.java class="com.dc.esb.container.service.ConsumerClientService"/>
+</component>
+<component name="JournalLogService" desc="记录交易流水" status="pass" type="default">
+	<implementation.java class="com.dc.esb.container.service.FlowLogService"/>
+</component>
+<component name="FlowControlService" desc="流控申请令牌" status="pass" type="default">
+	<implementation.java class="com.dc.esb.container.service.FlowControlService"/>
+</component>
+<component name="FlowRecycleService" desc="流控归还令牌" status="pass" type="default">
+	<implementation.java class="com.dc.esb.container.service.FlowRecycleService"/>
+</component>
+<component name="EncryptService" desc="报文数据加密" status="pass" type="default">
+	<implementation.java class="com.dc.esb.container.service.EncryptService"/>
+</component>
+<component name="DecryptService" desc="报文数据解密" status="pass" type="default">
+	<implementation.java class="com.dc.esb.container.service.DecryptService"/>
+</component>
+<component name="PackService" desc="报文组包" status="pass" type="default">
+	<implementation.java class="com.dc.esb.container.databinding.baseService.MessagePackerService"/>
+</component>
+<component name="UnpackService" desc="报文拆包" status="pass" type="default">
+	<implementation.java class="com.dc.esb.container.databinding.baseService.MessageUnpackService"/>
+</component>
+<component name="MappingService" desc="SDO映射（湛江poc）" status="pass" type="default">
+	<implementation.java class="com.dc.esb.mapping.newmapping.MappingService"/>
+</component>
+<component name="SystemIdentify" desc="系统识别" status="pass" type="default">
+	<implementation.java class="com.dc.esb.container.service.systemidentify.SystemIdentifyService"/>
+</component>
+<component name="NoReturnService" desc="交易不返回，只用于异步模式out容器" status="pass" type="default">
+	<implementation.java class="com.dc.esb.container.service.NoReturnQuitService"/>
+</component>
+<component name="FTPProcessService" desc="文件传输专用" status="pass" type="default">
+	<implementation.java class="com.dc.esb.container.service.FTPProcessService"/>
+</component>
+<component name="ESB_LOG" desc="记录业务日志给日志分析" status="pass" type="default">
+	<implementation.java class="com.dc.esb.log.baseservice.WriteBussinessLogService"/>
+</component>
+<component name="ExceptionHandlerService" desc="异常处理，用于默认协议流程中" status="pass" type="default">
+	<implementation.java class="com.dc.esb.container.service.ExceptionHandlerService"/>
+</component>
+<component name="FlowNoGenerateService" desc="生成流水号，用于默认协议流程中" status="pass" type="default">
+	<implementation.java class="com.dc.esb.container.service.FlowNoGenerateService"/>
+</component>
+<component name="ProtocolReadService" desc="协议读消息，用于默认协议流程" status="pass" type="default">
+	<implementation.java class="com.dc.esb.container.service.ProtocolReadService"/>
+</component>
+<component name="ProtocolWriteService" desc="协议写消息，用于默认协议流程" status="pass" type="default">
+	<implementation.java class="com.dc.esb.container.service.ProtocolWriteService"/>
+</component>
+<component name="StoreForwardSystemIdentifyService" desc="存储转发系统识别" status="pass" type="default">
+	<implementation.java class="com.dc.esb.container.service.StoreForwardSystemIdentifyService"/>
+</component>
+<component name="default" desc="正常接出业务服务统一入口" status="pass" type="default">
+	<implementation.java class="com.dc.esb.container.service.DefaultBusinessService"/>
+</component>
+<component name="PlatformBusinessService" desc="平台业务服务，没有接出协议的业务服务的统一入口" status="pass" type="default">
+	<implementation.java class="com.dc.esb.container.service.PlatformBusinessService"/>
+</component>
+<component name="SimpleProxyService" desc="组合服务统一入口" status="pass" type="default">
+	<implementation.java class="com.dc.esb.proxyservice.explainengine.SimpleProxyService"/>
+</component>
+<component name="PrintCtxService" desc="打印上下文（控制台与debug级别）" status="pass" type="default">
+	<implementation.java class="com.dc.esb.container.service.PrintCtxService"/>
+</component>
+<component name="fileTransfer" desc="文件传输专用，文件传输业务服务" status="pass" type="default">
+	<implementation.java class="com.dc.esb.container.service.FileTransferBusinessService"/>
+</component>
+<component name="CacheCtxBService" desc="缓存异步上下文" status="pass" type="default">
+	<implementation.java class="com.dc.esb.container.service.CacheCtxBService"/>
+</component>
+<component name="RecoveryCtxBService" desc="恢复缓存上下文" status="pass" type="default">
+	<implementation.java class="com.dc.esb.container.service.RecoveryCtxBService"/>
+</component>
+<component name="ProtocolForwordBaseService" desc="异步协议，消息转发" status="pass" type="default">
+	<implementation.java class="com.dc.esb.container.service.forward.ProtocolForwordBaseService"/>
+</component>
+<component name="MonitorStep1BService" desc="监控采集交易数据第一步(通常用于IN端)" status="pass" type="default">
+	<implementation.java class="com.dc.esb.monitorApp.client.baseservice.MonitorStep1BService"/>
+</component>
+<component name="MonitorStep2BService" desc="监控采集交易数据第二步(通常用于OUT端)" status="pass" type="default">
+	<implementation.java class="com.dc.esb.monitorApp.client.baseservice.MonitorStep2BService"/>
+</component>
+<component name="MonitorStep3BService" desc="监控采集交易数据第三步(通常用于OUT端)" status="pass" type="default">
+	<implementation.java class="com.dc.esb.monitorApp.client.baseservice.MonitorStep3BService"/>
+</component>
+<component name="MonitorStep4BService" desc="监控采集交易数据第四步(通常用于IN端)" status="pass" type="default">
+	<implementation.java class="com.dc.esb.monitorApp.client.baseservice.MonitorStep4BService"/>
+</component>
+<component name="TransferXpathSDO2MidSDO" desc="将以Sdoroot作为开头的sdo转化为以metadata作为xpath的sdo" status="pass" type="default">
+	<implementation.java class="com.dc.esb.container.databinding.baseService.TransferXpathSDO2MidSDO"/>
+</component>
+<component name="TransferMidSDO2XpathSDO" desc="将以metadata作为xpath的sdo转化为以Sdoroot作为开头的sdo" status="pass" type="default">
+	<implementation.java class="com.dc.esb.container.databinding.baseService.TransferMidSDO2XpathSDO"/>
+</component>
+<component name="SetBussService" desc="设置服务名称" status="pass" type="default">
+	<implementation.java class="com.dc.esb.container.service.SetBussService"/>
+</component>
+<component name="BusLogServiceStep2" desc="第二笔业务日志打印" status="pass" type="default">
+	<implementation.java class="com.dc.esb.monitorApp.client.baseservice.BusLogServiceStep2"/>
+</component>
+<component name="BusLogServiceStep3" desc="第三笔业务日志打印" status="pass" type="default">
+	<implementation.java class="com.dc.esb.monitorApp.client.baseservice.BusLogServiceStep3"/>
+</component>
+<component name="MonitorNewStep2BService" desc="监控采集交易数据第二步(通常用于OUT端)" status="pass" type="default">
+	<implementation.java class="com.dc.esb.monitorApp.client.baseservice.MonitorNewStep2BService"/>
+</component>
+<component name="MonitorNewStep3BService" desc="监控采集交易数据第三步(通常用于OUT端)" status="pass" type="default">
+	<implementation.java class="com.dc.esb.monitorApp.client.baseservice.MonitorNewStep3BService"/>
+</component>
+<component name="ServiceIdentify" desc="服务识别" status="pass" type="default">
+	<implementation.java class="com.dc.esb.container.service.serviceIdentify.ServiceIdentifyService"/>
+</component>
+<component name="AccessCheckService" desc="检查服务故障隔离、服务有效期、服务访问控制" status="pass" type="default">
+	<implementation.java class="com.dc.esb.container.service.AccessCheckService"/>
+</component>
+<component name="StoreForwardServiceIdentifyService" desc="存储转发服务识别" status="pass" type="default">
+	<implementation.java class="com.dc.esb.container.service.StoreForwardServiceIdentifyService"/>
+</component>
+<component name="StoreForwardIdentifyService" desc="存储转发识别" status="pass" type="default">
+	<implementation.java class="com.dc.esb.container.service.StoreForwardIdentifyService"/>
+</component>
+<component name="GeneratePkgService" desc="存储转发专用，生成返回报文" status="pass" type="default">
+	<implementation.java class="com.dc.esb.container.service.GeneratePkgService"/>
+</component>
+<component name="BaseIPChecker" desc="IP访问控制" status="pass" type="default">
+	<implementation.java class="com.dc.esb.container.service.BaseIPChecker"/>
+</component>
+<component name="FtpForwardService" desc="文件传输专用" status="pass" type="default">
+	<implementation.java class="com.dc.esb.container.service.ForwardToFtpProtocolService"/>
+</component>
+<component name="FileTransferBaseService" desc="文件传输专用，将请求报文（文件传输配置内容）拆成了sdo报文" status="pass" type="default">
+	<implementation.java class="com.dc.esb.container.service.FileTransferBaseService"/>
+</component>
+<component name="ProtocolBridgeBaseService" desc="桥接协议专用" status="pass" type="default">
+	<implementation.java class="com.dc.esb.container.service.ProtocolBridgeBaseService"/>
+</component>
+<component name="AsynProxyServicePackBService" desc="公共渠道上处理组合服务报文" status="pass" type="default">
+	<implementation.java class="com.dc.esb.proxyservice.explainengine.base.AsynProxyServicePackBService"/>
+</component>
+<component name="DownWardCastService" desc="组合服务多态向下cast" status="pass" type="default">
+	<implementation.java class="com.dc.esb.container.service.DownWardCastService"/>
+</component>
+<component name="UpWardCastService" desc="组合服务多态向上cast" status="pass" type="default">
+	<implementation.java class="com.dc.esb.container.service.UpWardCastService"/>
+</component>
+<component name="RESTServiceIdentifyService" desc="Rest协议的服务识别" status="pass" type="default">
+	<implementation.java class="com.dc.esb.container.service.RESTServiceIdentifyService"/>
+</component>
+<component name="InAdaptorFlowIdentifyService" desc="接入适配流程识别" status="pass" type="default">
+	<implementation.java class="com.dc.esb.container.service.InAdaptorFlowIdentifyService"/>
+</component>
+<component name="OutAdaptorFlowIdentifyService" desc="接出适配流程识别" status="pass" type="default">
+	<implementation.java class="com.dc.esb.container.service.OutAdaptorFlowIdentifyService"/>
+</component>
+<component name="IPCheckerService" desc="IP访问控制" status="pass" type="default">
+	<implementation.java class="com.dc.esb.container.service.IPCheckerService"/>
+</component>
+<component name="BusLogServiceStep1" desc="第一笔业务日志打印" status="pass" type="default">
+	<implementation.java class="com.dc.esb.monitorApp.client.baseservice.BusLogServiceStep1"/>
+</component>
+<component name="BusLogServiceStep4" desc="第四笔业务日志打印" status="pass" type="default">
+	<implementation.java class="com.dc.esb.monitorApp.client.baseservice.BusLogServiceStep4"/>
+</component>
+<component name="MonitorNewStep1BService" desc="监控采集交易数据第一步(通常用于IN端)" status="pass" type="default">
+	<implementation.java class="com.dc.esb.monitorApp.client.baseservice.MonitorNewStep1BService"/>
+</component>
+<component name="MonitorNewStep4BService" desc="监控采集交易数据第四步(通常用于IN端)" status="pass" type="default">
+	<implementation.java class="com.dc.esb.monitorApp.client.baseservice.MonitorNewStep4BService"/>
+</component>
+</composite>

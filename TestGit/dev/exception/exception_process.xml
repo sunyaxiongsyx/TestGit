@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<processes xmlns="http://com/dc/esb/exception" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<!--ALL DEFAULTS-->
+  <!--<process  sid="default" ch="default" ecode="default" >
+		<policy type="service">S_base_errProcess</policy>
+	</process>-->
+</processes>

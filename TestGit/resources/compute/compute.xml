@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<eventTypes>
+  <eventType>
+     <name>deploy</name>
+     <objs>
+                <obj>
+                     <objtype>business</objtype>
+                    <impl>com.dc.esb.export.impls.ExportBussService</impl>
+               </obj>
+     </objs>
+  </eventType>
+</eventTypes>

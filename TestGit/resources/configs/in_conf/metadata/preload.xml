@@ -1,0 +1,19 @@
+<preload>
+	<package type="xml" parser_generator="com.dc.governance.metadata.impls.generator.NormalXML2SDOParserGenerator" packer_generator="com.dc.governance.metadata.impls.generator.SDO2NormalXmlGenerator"/>
+	<package type="fix" parser_generator="com.dc.governance.metadata.impls.generator.Fix2SDOParserGenerator" packer_generator="com.dc.governance.metadata.impls.generator.SDO2FixPackerGenerator"/>
+    <package type="cd" parser_generator="com.dc.governance.metadata.impls.generator.CD2SDOParserGenerator" packer_generator="com.dc.governance.metadata.impls.generator.SDO2CDGenerator"/>
+	<package type="zhanjiangfix" parser_generator="com.dc.governance.metadata.impls.generator.ZJFix2SDOParserGenerator" packer_generator="com.dc.governance.metadata.impls.generator.SDO2ZJFixPackerGenerator"/>
+	<package type="soap" parser_generator="com.dc.governance.metadata.impls.generator.SOAP2SDOParserGenerator" packer_generator="com.dc.governance.metadata.impls.generator.SDO2SOAPPackerGenerator"/>
+	<package type="mixed" parser_generator="com.dc.governance.metadata.impls.generator.FixXml2SDOParserGenerator" packer_generator="com.dc.governance.metadata.impls.generator.SDO2CICSPackerGenerator"/>
+	<package type="sql" parser_generator="com.dc.governance.metadata.impls.generator.SQL2SDOParserGenerator" packer_generator="com.dc.governance.metadata.impls.generator.SDO2SQLPackerGenerator"/>
+	<package type="json" parser_generator="com.dc.governance.metadata.impls.generator.Json2SDOParserGenerator" packer_generator="com.dc.governance.metadata.impls.generator.SDO2JSONPackerGenerator"/>
+	<package type="sop"	parser_generator="com.dc.governance.metadata.impls.generator.SOP2SDOParserGenerator" packer_generator="com.dc.governance.metadata.impls.generator.SDO2SOPPackerGenerator" />
+	<package type="kv"  parser_generator="com.dc.governance.metadata.impls.generator.KV2SDOParserGenerator"  packer_generator="com.dc.governance.metadata.impls.generator.SDO2KVPackerGenerator" />
+	<package type="keyvalue" parser_generator="com.dc.governance.metadata.impls.generator.Cics2SDOParserGenerator" packer_generator="com.dc.governance.metadata.impls.generator.SDO2CICSPackerGenerator" />
+	<package type="iso8583" parser_generator="com.dc.governance.metadata.impls.generator.Fix8583ToSDOparserGenerator" packer_generator="com.dc.governance.metadata.impls.generator.SDO2Fix8583PackerGenerator"/>
+	<package type="swift" parser_generator="com.dc.governance.metadata.impls.generator.SWIFT2SDOParserGenerator" packer_generator="com.dc.governance.metadata.impls.generator.SDO2SWIFTPackerGenerator"/>
+	<package type="sap" parser_generator="com.dc.governance.metadata.impls.generator.JcoData2SDOParserGenerator" packer_generator="com.dc.governance.metadata.impls.generator.SDO2JcoDataPackerGenerator"/>
+	<package type="zdxml" parser_generator="com.dc.governance.metadata.impls.generator.ZDXML2SDOParserGenerator" packer_generator="com.dc.governance.metadata.impls.generator.SDO2ZDXmlGenerator"/> 		
+    <package type="ldap" parser_generator="com.dc.governance.metadata.impls.generator.LDAP2SDOParserGenerator" packer_generator="com.dc.governance.metadata.impls.generator.SDO2LDAPPackerGenerator"/> 		
+    <package type="excel" parser_generator="com.dc.governance.metadata.impls.generator.Excel2SDOParserGenerator" packer_generator="com.dc.governance.metadata.impls.generator.SDO2ZDXmlGenerator"/> 	
+</preload>

@@ -1,0 +1,30 @@
+<preload>
+	<package type="cd"
+		parser="com.dc.governance.metadata.impls.interpretive.CDInterpretiveParser"
+		packer="com.dc.governance.metadata.impls.interpretive.CDInterpretivePacker" />
+
+	<package type="fix"
+		parser="com.dc.governance.metadata.impls.interpretive.FixSplitInterpretiveParser"
+		packer="com.dc.governance.metadata.impls.interpretive.FixSplitInterpretivePacker" />
+	<package type="pos8583"
+		parser="com.dc.governance.metadata.impls.interpretive.Fix8583InterpretiveParser"
+		packer="com.dc.governance.metadata.impls.interpretive.Fix8583InterpretivePacker" />
+	<package type="fix_xml"
+		parser="com.dc.governance.metadata.impls.interpretive.MixedInterpretiveParser"
+		packer="com.dc.governance.metadata.impls.interpretive.MixedInterpretivePacker" />
+	<package type="xml"
+		parser="com.dc.governance.metadata.impls.interpretive.XMLInterpretiveParser"
+		packer="com.dc.governance.metadata.impls.interpretive.XMLInterpretivePacker" />
+	<package type="split"
+		parser="com.dc.governance.metadata.impls.interpretive.SplitInterpretiveParser"
+		packer="com.dc.governance.metadata.impls.interpretive.SplitInterpretivePacker" />
+	<package type="json"
+		parser="com.dc.governance.metadata.impls.interpretive.JsonInterpretiveParser"
+		packer="com.dc.governance.metadata.impls.interpretive.JsonInterpretivePacker" />
+	<!--<package type="fix_pure"
+		parser="com.dc.governance.metadata.impls.interpretive.FixInterpretiveParser"
+		packer="com.dc.governance.metadata.impls.interpretive.FixInterpretivePacker" />
+	<package type="mix"
+		parser="com.dc.governance.metadata.impls.interpretive.MixedInterpretiveParser"
+		packer="com.dc.governance.metadata.impls.interpretive.MixedInterpretivePacker" /> -->
+</preload>

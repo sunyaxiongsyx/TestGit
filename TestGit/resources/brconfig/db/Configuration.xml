@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+PUBLIC "-//ibatis.apache.org//DTD Config 3.0//EN"
+"http://ibatis.apache.org/dtd/ibatis-3-config.dtd">
+<configuration>
+	<settings>
+		<setting name="cacheEnabled" value="true" />
+		<setting name="lazyLoadingEnabled" value="true" />
+		<setting name="aggressiveLazyLoading" value="true" />
+	</settings>
+	<typeAliases>
+		<typeAlias type="com.dc.impls.db.ibatis.DruidDataSourceFactory"
+			alias="POOL_DRUID" />
+	</typeAliases>
+	<environments default="branchdb">
+		<environment id="branchdb">
+			<transactionManager type="JDBC" />
+			<dataSource type="POOL_DRUID">
+				<property name="driver" value="com.informix.jdbc.IfxDriver" />
+				<property name="url"
+					value="jdbc:informix-sqli://192.168.201.48:9088/branchdb:informixserver=ol_informix1170;NEWCODESET=utf-8,8859-1,819" />
+				<property name="username" value="informix" />
+				<property name="password" value="informix" />
+			</dataSource>
+		</environment>
+		<!--
+			<environment id="branchdb"> <transactionManager type="JDBC" />
+			<dataSource type="POOL_DRUID"> <property name="driver"
+			value="com.mysql.jdbc.Driver" /> <property name="url"
+			value="jdbc:mysql://localhost:3306/test?Unicode=true&characterEncoding=gbk&autoReconnect=true&failOverReadOnly=false"
+			/> <property name="username" value="root" /> <property
+			name="password" value="root" /> </dataSource> </environment>
+		-->
+	</environments>
+	<mappers>
+		<!--
+			<mapper
+			url="file:///E:\\SmartBranch7\\SmartBranchSvn\\resources\\brconfig\\db\\env.xml"/>
+			<mapper
+			url="file:///home/branch/app/SmartBranch/brconfig/db/fw_sec.xml" />
+		-->
+		<mapper resource="env.xml" />
+	</mappers>
+</configuration>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<protocols xmlns="http://com/dc/esb/xmlbean/protocol/define">
+  <protocol name="EJBChannelConnector">
+    <configImpl>com.dc.esb.container.protocol.ejb.EJBProtocolConfig</configImpl>
+    <parserImpl>com.dc.esb.container.protocol.ejb.EJBProtocolProcessor</parserImpl>
+    <connectorImpl>com.dc.esb.container.protocol.ejb.server.EJBServerConnector</connectorImpl>
+  </protocol>
+  <protocol name="HTTPChannelConnector">
+    <configImpl>com.dc.esb.container.protocol.http.HTTPProtocolConfig</configImpl>
+    <parserImpl>com.dc.esb.container.protocol.http.HTTPProtocolProcessor</parserImpl>
+    <connectorImpl>com.dc.esb.container.protocol.http.server.HTTPServerConnector</connectorImpl>
+  </protocol>
+  <protocol name="JMSChannelConnector">
+    <configImpl>com.dc.esb.container.protocol.jms.JMSProtocolConfig</configImpl>
+    <parserImpl>com.dc.esb.container.protocol.jms.JMSProtocolProcessor</parserImpl>
+    <connectorImpl>com.dc.esb.container.protocol.jms.server.JMSServerConnector</connectorImpl>
+  </protocol>
+  <protocol name="TCPChannelConnector">
+    <configImpl>com.dc.esb.container.protocol.tcp.TCPProtocolConfig</configImpl>
+    <parserImpl>com.dc.esb.container.protocol.tcp.TCPProtocolProcessor</parserImpl>
+    <connectorImpl>com.dc.esb.container.protocol.tcp.server.TCPServerConnector</connectorImpl>
+  </protocol>
+  <protocol name="WSChannelConnector">
+    <configImpl>com.dc.esb.container.protocol.ws.WSProtocolConfig</configImpl>
+    <parserImpl>com.dc.esb.container.protocol.ws.WSProtocolProcessor</parserImpl>
+    <connectorImpl>com.dc.esb.container.protocol.ws.server.WSServerConnector</connectorImpl>
+  </protocol>
+</protocols>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project>
+    <categories>	
+		 
+        <category>
+	
+            <id>DEFAULT</id>
+	
+            <name>系统组件</name>
+	
+            <description>系统组件是一种内置组件,开发期间不允许被修改</description>
+	
+            <package/>
+	
+            <categories>
+		
+	</categories>
+        </category>		 
+        <category>
+	
+            <id>service</id>
+	
+            <name>服务模块</name>
+	
+            <description>服务模块</description>
+	
+            <package/>
+	
+            <categories>
+		
+	</categories>
+        </category>		
+	
+    </categories></project>

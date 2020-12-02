@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<sources>
+	<source name="工程通用参数" implClass="com.dc.esb.container.project.ProjectEnvironment"/>
+	
+</sources>

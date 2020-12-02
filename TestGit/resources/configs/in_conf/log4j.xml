@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+	<appender name="cmd" class="org.apache.log4j.ConsoleAppender">
+		<param name="Encoding" value="UTF-8" />
+		<param name="Threshold" value="DEBUG" />
+		<param name="Target" value="System.out" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d [IN] [%t] %-5p (%F:%L) - %m%n" />
+		</layout>
+	</appender>
+
+	<appender name="tran"
+		class="org.apache.log4j.BrDailyMultiTracerAppenerStub">
+		<param name="File" value="../../channels.log" />
+		<param name="Encoding" value="UTF-8" />
+		<param name="Threshold" value="DEBUG" />
+		<param name="Append" value="true" />
+		<param name="keyPath" value="context?immuneChannelid" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d [IN] [%t] [%-5p]   (%c.%M:%L) - %m%n" />
+		</layout>
+	</appender>
+	<appender name="all"
+		class="org.apache.log4j.BrDailyRollingFileAppenerStub">
+		<param name="File" value="branch.log" />
+		<param name="Encoding" value="UTF-8" />
+		<param name="Threshold" value="INFO" />
+		<param name="Append" value="true" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d [IN] [%t]  [%-5p]   (%c.%M:%L) - %m%n" />
+		</layout>
+	</appender>
+
+	<appender name="platform" class="org.apache.log4j.RollingFileAppender">
+		<param name="File" value="./log/in/platform.log" />
+		<param name="Encoding" value="UTF-8" />
+		<param name="Threshold" value="DEBUG" />
+		<param name="Append" value="true" />
+		<param name="MaxFileSize" value="5000kb" />
+		<param name="MaxBackupIndex" value="5" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d [IN] [%t]  [%-5p]   (%c.%M:%L) - %m%n" />
+		</layout>
+	</appender>
+
+
+	<logger name="com.dc.xml.binding.ExtRuleFactory" additivity="false">
+		<level value="ERROR" />
+		<appender-ref ref="cmd" />
+		<appender-ref ref="all" />
+	</logger>
+
+	<logger name="com.dc.util.classloader.ChangeAwareClassLoader"
+		additivity="false">
+		<level value="ERROR" />
+		<appender-ref ref="cmd" />
+		<appender-ref ref="all" />
+	</logger>
+
+	<logger name="com.dc.governance.metadata.impls" additivity="false">
+		<level value="WARN" />
+		<appender-ref ref="cmd" />
+		<appender-ref ref="all" />
+		<appender-ref ref="platform" />
+	</logger>
+	<logger
+		name="com.dc.esb.container.databinding.channel.SDOCompositeDataHelper"
+		additivity="false">
+		<level value="INFO" />
+		<appender-ref ref="all" />
+		<appender-ref ref="cmd" />
+	</logger>
+
+	<logger name="org.apache.commons.digester" additivity="false">
+		<level value="ERROR" />
+		<appender-ref ref="cmd" />
+		<appender-ref ref="all" />
+		<appender-ref ref="platform" />
+	</logger>
+	<logger name="com.dc.xml.binding" additivity="false">
+		<level value="ERROR" />
+		<appender-ref ref="cmd" />
+		<appender-ref ref="all" />
+		<appender-ref ref="platform" />
+	</logger>
+	<logger name="com.dc.datastore" additivity="false">
+		<level value="ERROR" />
+		<appender-ref ref="cmd" />
+		<appender-ref ref="all" />
+		<appender-ref ref="platform" />
+	</logger>
+	<logger name="com.paic.bkesb.provider.conv.standardXml"
+		additivity="false">
+		<level value="ERROR" />
+		<appender-ref ref="cmd" />
+		<appender-ref ref="all" />
+		<appender-ref ref="platform" />
+	</logger>
+	<logger name="org.apache" additivity="false">
+		<level value="ERROR" />
+		<appender-ref ref="cmd" />
+		<appender-ref ref="all" />
+		<appender-ref ref="platform" />
+	</logger>
+	<logger name="com.dc.expr" additivity="false">
+		<level value="ERROR" />
+		<appender-ref ref="cmd" />
+		<appender-ref ref="all" />
+		<appender-ref ref="platform" />
+	</logger>
+	<logger name="com.dc.eai" additivity="false">
+		<level value="INFO" />
+		<appender-ref ref="cmd" />
+		<appender-ref ref="all" />
+		<appender-ref ref="platform" />
+	</logger>
+	<logger name="com.dc.esb.container.protocol" additivity="false">
+		<level value="INFO" />
+		<appender-ref ref="cmd" />
+		<appender-ref ref="all" />
+		<appender-ref ref="platform" />
+	</logger>
+	<logger name="com.dc.esb.container.proxyservice.ContainerInvoke"
+		additivity="false">
+		<level value="INFO" />
+		<appender-ref ref="all" />
+		<appender-ref ref="cmd" />
+	</logger>
+	<logger name="com.dcfs.impls.esb.communication" additivity="false">
+		<level value="WARN" />
+		<appender-ref ref="cmd" />
+	</logger>
+	<logger name="com.dc.branch.service.DefaultBusiService"
+		additivity="false">
+		<level value="INFO" />
+		<appender-ref ref="all" />
+		<appender-ref ref="cmd" />
+	</logger>
+	<logger name="com.dc.governance.metadata.impls.interpretive"
+		additivity="false">
+		<level value="DEBUG" />
+		<appender-ref ref="all" />
+		<appender-ref ref="cmd" />
+	</logger>
+	<root>
+		<priority value="DEBUG" />
+		<appender-ref ref="cmd" />
+		<appender-ref ref="all" />
+		<appender-ref ref="tran" />
+		<appender-ref ref="platform" />
+	</root>
+</log4j:configuration>  

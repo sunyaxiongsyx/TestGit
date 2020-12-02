@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<expression>
+	<function isstatic="true"
+		class="com.dc.governance.metadata.impls.expression.function.DefaultFunction"
+		profix="default" />
+<!-- 启用时需引入eci-prod.jar -->
+<!--	<function isstatic="true" class="com.dcfs.eci.prod.tools.pos.POSDataUtils"-->
+<!--		profix="pos" />-->
+<!--	<function isstatic="true" class="com.dcfs.eci.prod.tools.cup.CupDataUtils"-->
+<!--		profix="cup" />-->
+	<function isstatic="true"
+		class="com.dc.branch.platform.functions.AttributeFunction" profix="attribute" />
+</expression>

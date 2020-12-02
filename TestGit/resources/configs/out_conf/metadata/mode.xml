@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mode-config>
+	<channel-mode>
+		<package-mode>
+			<!-- 标准xml格式报文的拆组包-->
+			<mode name="standard" impl-class-name="com.dc.eai.conv.packconv.StandardPackageConverter" />
+			<!-- 定长格式报文的拆组包-->
+			<mode name="sequence"
+				impl-class-name="com.dcfs.integrator.channel.platform.convert.impl.special.ChannelPackageConverter" />
+			<!-- 传统渠道拆组包-fts拆组包格式-->
+			<mode name="traditional" impl-class-name="com.dc.eai.pack.TraditionalPackageConverter" />
+			<!-- 异常模式组包 -->
+			<mode name="exception"
+				impl-class-name="com.dcfs.integrator.channel.platform.exception.pack.impl.ExceptionPackageConverter" />
+		</package-mode>
+		<field-store-mode>
+			<mode name="standard" impl-class-name="com.dc.eai.conv.fieldconv.StandardFieldConverter" />
+			<mode name="image" impl-class-name="com.dc.eai.conv.fieldconv.StandardFieldConverter" />
+			<mode name="string"
+				impl-class-name="com.dcfs.integrator.channel.platform.convert.impl.special.ChannelStringFieldConverter">
+				<attribute name="encoding" value="UTF-8" />
+			</mode>
+			<mode name="gbkstring"
+				impl-class-name="com.dcfs.integrator.channel.platform.convert.impl.special.ChannelStringFieldConverter">
+				<attribute name="encoding" value="GBK" />
+			</mode>
+			<mode name="double"
+				impl-class-name="com.dcfs.integrator.channel.platform.convert.impl.special.ChannelStringFieldConverter" />
+			<mode name="bildouble"
+				impl-class-name="com.dcfs.integrator.channel.platform.convert.impl.special.ChannelStringFieldConverter">
+				<attribute name="withDigit" value="false" />
+			</mode>
+
+			<mode name="pack" impl-class-name="com.dc.eai.conv.fieldconv.PackDecimalFieldConverter" />
+			<mode name="zone" impl-class-name="com.dc.eai.conv.fieldconv.ZoneDecimalFieldConverter" />
+			<mode name="withlength" impl-class-name="com.dc.eai.conv.fieldconv.WithLengthFieldConverter" />
+
+
+			<attribute name="name" value="length" />
+			<attribute name="type" value="int" />
+			<attribute name="length" value="4" />
+			<attribute name="scale" value="0" />
+			<attribute name="storemode" value="standard" />
+		</field-store-mode>
+	</channel-mode>
+
+	<metadata-mode>
+		<mode name="LBCD_INT" impl-class-name="com.dc.branch.commons.LBCDIntConverter" />
+		<mode name="RBCD_INT" impl-class-name="com.dc.branch.commons.RBCDIntConverter" />
+
+		<mode name="LBCD_HEX" impl-class-name="com.dc.branch.commons.LBCDHexConverter" />
+		<mode name="RBCD_HEX" impl-class-name="com.dc.branch.commons.RBCDHexConverter" />
+
+		<mode name="LBCD_BYTES" impl-class-name="com.dc.branch.commons.LBCDBytesConverter" />
+		<mode name="RBCD_BYTES" impl-class-name="com.dc.branch.commons.RBCDBytesConverter" />
+
+		<mode name="LBCD_ASCII" impl-class-name="com.dc.branch.commons.LBCDAsciiConverter" />
+		<mode name="RBCD_ASCII" impl-class-name="com.dc.branch.commons.RBCDAsciiConverter" />
+
+		<mode name="BIN_INT" impl-class-name="com.dc.branch.commons.BinaryIntConvertor" />
+		<mode name="ACT_BIN" impl-class-name="com.dc.branch.commons.ActualBinaryConvertor" />
+		<mode name="CUP_ASCII" impl-class-name="com.dc.branch.commons.CupAsciiConvertor" />
+		<mode name="base64" impl-class-name="com.dc.branch.commons.Base64Converter" />
+	</metadata-mode>
+
+</mode-config>

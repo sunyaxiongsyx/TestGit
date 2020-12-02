@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<components> 
+  <component type="identifysystem"> 
+    <item id="系统识别" category="DEFAULT" path="/dev/identify/system/identifysystem.xml"/> 
+  </component>  
+  <component type="identifyservice"> 
+    <item id="服务识别" category="DEFAULT" path="/dev/identify/service/identifyservice.xml"/> 
+  </component>  
+  <component type="baseservicecomposite.platform"> 
+    <item id="平台基础服务" category="DEFAULT" path="/basecomposite.xml"/> 
+  </component>  
+  <component type="channelservicesystem.channel"> 
+    <item id="渠道系统" category="DEFAULT" path="/dev/cssystem/channel/channelsystem.xml"/> 
+  </component>  
+  <component type="channelservicesystem.serivce"> 
+    <item id="服务系统" category="DEFAULT" path="/dev/cssystem/service/servicesystem.xml"/> 
+  </component> 
+  <component type="exceptionprocess"> 
+    <item id="异常处理维护" category="DEFAULT" path="/dev/exception/exception_process.xml"/> 
+  </component> 
+  <component type="exceptioncode"> 
+    <item id="异常码配置" category="DEFAULT" path="/dev/exception/exception_code.xml"/> 
+  </component> 
+   <component type="business"/>
+  <component type="mdt"/>
+  <component type="channel"/>
+</components>
