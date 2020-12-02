@@ -35,7 +35,11 @@
   </component>  
   <component type="protocol_client"> 
     <item id="ESBSYS_BusiESB_OUT" desc="ESB默认接出协议" category="DEFAULT" path="dev/protocol/client/ESBSYS_BusiESB_OUT.HTTPServiceConnector" protocoltype="HTTPServiceConnector"/>  
-    <item id="ESBSYS_BusiWeather_OUT" desc="天气接口接出协议" category="DEFAULT" path="dev/protocol/client/ESBSYS_BusiWeather_OUT.HTTPServiceConnector" protocoltype="HTTPServiceConnector"/> 
+    <item id="ESBSYS_BusiWeather_OUT" desc="天气接口接出协议" category="DEFAULT" path="dev/protocol/client/ESBSYS_BusiWeather_OUT.HTTPServiceConnector" protocoltype="HTTPServiceConnector"/>  
+    <item id="0001" desc="" category="DEFAULT" path="dev/protocol/client/0001.HTTPServiceConnector" protocoltype="HTTPServiceConnector"/>  
+    <item id="0002" desc="" category="DEFAULT" path="dev/protocol/client/0002.HTTPServiceConnector" protocoltype="HTTPServiceConnector"/>  
+    <item id="0003" desc="" category="DEFAULT" path="dev/protocol/client/0003.HTTPServiceConnector" protocoltype="HTTPServiceConnector"/>  
+    <item id="0004" desc="" category="DEFAULT" path="dev/protocol/client/0004.HTTPServiceConnector" protocoltype="HTTPServiceConnector"/> 
   </component>  
   <component type="protocol_server"> 
     <item id="ESB_DETECT_GET" desc="标准ESB探测协议16600" category="DEFAULT" path="dev/protocol/server/ESB_DETECT_GET.HTTPChannelConnector" protocoltype="HTTPChannelConnector"/>  
@@ -61,6 +65,6 @@
     <item id="ThroughIn" desc="穿透场景接入流程" category="DEFAULT" path="resources/adaptorFlow/ThroughIn.adp" subtype="adaptorFlow"/>  
     <item id="ThroughOut" desc="穿透场景接出流程" category="DEFAULT" path="resources/adaptorFlow/ThroughOut.adp" subtype="adaptorFlow"/>  
     <item id="ThroughTcpIn" desc="" category="DEFAULT" path="resources/adaptorFlow/ThroughTcpIn.adp" subtype="adaptorFlow"/>  
-    <item id="UnpackIn" desc="拆组包接入流程" category="DEFAULT" path="resources/adaptorFlow/UnpackIn.adp" subtype="adaptorFlow"/>
+    <item id="UnpackIn" desc="拆组包接入流程" category="DEFAULT" path="resources/adaptorFlow/UnpackIn.adp" subtype="adaptorFlow"/> 
   </component> 
 </components>
